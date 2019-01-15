@@ -1,0 +1,777 @@
+/*this sets the body of the webpage to a minimumn of 500px and to the font arial.*/
+body{
+    min-height: 500px;
+    font-family: "arial";
+    /* background: linear-gradient(to right, #0d7ed0 0%, #24c099 100%); */
+    /* background: linear-gradient(to right, #ffffcc 0%, #ffcc00 100%); */
+    /* background: linear-gradient(to right, #00ffff 0%, #33ccff 100%); */
+    /* background: linear-gradient(to right, #fe6263 36%, #fb044a 100%); */
+    /* background: linear-gradient(to right, #ccffff 0%, #99ccff 100%); */
+    /* background: linear-gradient(to right, #ffffcc 0%, #ffff99 100%); */
+    background: linear-gradient(to right, #ccffcc 0%, #00ccff 100%);
+}
+
+.header{
+    background: linear-gradient(to right, #ccffcc 0%, #00ccff 100%);
+
+}
+
+/*this will be used to remove the padding from the navbar
+/* .navbar{
+    padding: 0;
+} */
+
+/* the following chnages the border color of the tables from grey to black */
+.table-bordered td{
+    border: 1px solid black;
+}
+
+/*this is the element that points to the learn more about us button in 'index.php'*/
+#learnM{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+/*this is the element that points to the learn more about us button in 'index.php'*/
+  #learnM:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    right: -20px;
+    transition: 0.5s;
+  }
+
+/*this is the element that points to the learn more about us button in 'index.php'*/
+  #learnM:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+
+/*this is the element that points to the learn more about us button in 'index.php'*/
+  #learnM:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+/*the following creates the home icon in the 'header.php' file*/
+  .fa-home{
+  font-size:30px;
+  color:white;
+  }
+
+  /* this creates the hover effect we see on the home icon in the 'header.php' file */
+  .fa-home:hover{
+    font-size:30px;
+    color:#11fcff;
+    }
+
+    /* the following removes a weird effect that is caused by using font awesome icons */
+    .socials:hover {
+        text-decoration:none;  
+     }
+
+/* this is the class that we use for the title of the news we see in 'news.php' and 'readmore.php' */
+.newsTitle{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+}
+
+
+/* this is the class we use to create the background for the notification banner in the 'header.php' */
+.notificationTitle{
+    text-align: center;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* this is the class we define in the 'index.php' file so all the contents appear in the middle */
+.indexBody{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Work on this to work with the image card width */
+.card{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+}
+
+/* this makes the cards in the 'staff.php' file stay centre */
+.cardBody{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* this is a class in 'readmore.php' that makes all the news content stay in the centre */
+.storyFull{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+
+/* this makes the forms in 'contacts.php' and 'registration.php' be a width of 300px when on a width less than 480px */
+@media screen and (max-width: 480px) {
+    .contactForm{
+        width: 300px;
+    }
+  }
+
+/* this is the class that is used to make the google calendar appear as it is on the desktop */
+.calendarBody{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px; 
+    height: 600px;
+}
+
+/* this will make the calendar appear smaller when on mobile size so it doesn't overflow with the rest of the website */
+@media screen and (max-width: 480px) {
+    .calendarBody{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px; 
+        height: 300px;
+    }
+  }
+
+  /* the following makes it so the twitter timeline does not appear in 'news.php' when on mobile view */
+  @media screen and (max-width: 767px) {
+    .twitterTimeline{
+        display: none;
+    }
+  }
+
+  /* This makes the twitter timeline width have more padding during a tablet view giving a better astetic look */
+  @media screen and (max-width: 979px) {
+    #twitter-widget-0{
+        min-width: 120px !important;
+    }
+  }
+ 
+
+/* this is the class for the button that allows you to read more about the specific news title */
+.readMore{
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+/* this makes the header white in 'header.php, so it will match the header image color */
+.header{
+    background-color:white;
+}
+
+/* this is the class contains the news content and makes the border outline in 'news.php' */
+.story{
+    border-bottom: 1px solid black;
+    overflow: auto;
+}
+
+/* this is the id that we use for the button in 'new.php' that brings us to the next page */
+#nextPage{
+    margin: 20px;
+    float: right;
+}
+
+/* this is the id we use in 'news.php' that brings us back to the previous page */
+#previousPage{
+    margin: 20px;
+}
+
+/* this class set the width and height for the header image in 'header.php' */
+.headerImage{
+    width: 500px;
+    height: 240px;
+}
+
+.headerImage2{
+    width: 700px;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* this creates the width image for the header image in 'header.php' when on a tablet sized device */
+@media screen and (max-width: 767px) {
+    .headerImage{
+        width: 480px;
+    }
+    
+    .headerImage2{
+        width: 480px;
+        height: 40px;
+    }
+    
+  }
+
+/* this creates the width image for the header image in 'header.php' when on a mobile sized device */
+@media screen and (max-width: 480px) {
+    .headerImage{
+        width: 300px;
+    }
+    .headerImage2{
+        width: 300px;
+        height: 30px;
+    }
+  }
+
+  /* this set the width of the google maps in 'contact.php' when on a tablet sized device */
+  @media screen and (max-width: 900px) {
+    .mapLocation{
+      width: 500px;
+    }
+}
+
+  /* this set the width of the google maps in 'contact.php' when on a mobile sized device */
+  @media screen and (max-width: 480px) {
+  .mapLocation{
+    width: 300px;
+  }
+}
+
+/* this sets the title style in the 'news.php' file */
+.newsHeader{
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+/* this sets the footer with all the imporant info in 'footer.php' the following style */
+#bottomContainer{
+    background-color: #212529;
+    margin-top: 50px;
+    color:white;
+    padding-bottom: 10px;
+}
+
+
+/* the following will give a longer margin distance from the footer to the content, so we wont get any weird stutter effect on large desktop devices */
+@media screen and (min-width: 1380px) {
+    #bottomContainer{
+        background-color: #212529;
+        margin-top: 250px;
+        color:white;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+/* this set the following in the 'fooer.php' to be centred */
+.footerTimesContainer{
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* this sets the privacy link in 'footer.php' to be white and underline */
+.privacyFooter{
+    color: white;
+    text-decoration: underline;
+}
+
+/* this sets the following image in 'about.php' to the following */
+.imageStructure{
+    width:450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* this sets the following image in 'about.php' to the following when on mobile size*/
+@media screen and (max-width: 480px) {
+.imageStructure{
+    width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+/* this sets the following image about Bernie in 'about.php' to the following */
+.imageBernie{
+    width:400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+/* this sets the following image about Bernie in 'about.php' to the following when on mobile size*/
+@media screen and (max-width: 480px) {
+    .imageBernie{
+        width:300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* this sets the title in the information in 'footer.php' to the following color */
+.footerTitle{
+    color: #11fcff;   
+}
+
+/* this makes all the info in the 'footer.php' have no padding or margins */
+.footerTimes{
+    margin: 0;
+    padding: 0;
+}
+
+/* the following makes the font in the footer section smaller to prevent an overlay effect */
+@media screen and (min-width: 550px) and (max-width: 767px) {
+    .footerTimes{
+        font-size: 13px;
+    }
+}
+
+/* this will remove spacing in the contacts page location section */
+.contactLocation{
+    margin: 0;
+    padding: 0;
+}
+
+/* this will remove spacing in the contacts page opening hours section */
+.openingLocation{
+    margin: 0;
+    padding: 0;
+}
+
+/* this will remove spacing in the contacts page buses section */
+.busLocation{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* this sets the title in 'staff.php' to the following style  */
+.staffHeader{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 64px;
+    font-style: italic;
+}
+
+/* this sets the title in 'volunteer.php' to the following style  */
+.volunteerHeader{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 64px;
+    font-style: italic;
+}
+
+/* this sets the title in 'board_of_management.php' to the following style  */
+.bomHeader{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 64px;
+    font-style: italic;
+}
+
+/* this sets the title in 'contacts.php' to the following style  */
+.contactHeader{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 64px;
+    font-style: italic;
+}
+
+/* this sets the title in 'contacts.php' to the following style  */
+.calendarHeader{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 64px;
+    font-style: italic;
+}
+
+/* this sets the title in 'index.php' to the following style  */
+.indexHeader{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+/* this sets the videos in 'newsVideos.php' to the following style */
+.videofiles{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    font-style: italic;
+}
+
+/* this sets the images in 'newsImage.php' to the following style */
+.newsImage{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* this sets the date of the news items to the following style in boths 'news.php' and 'readmore.php' */
+.newsDate{
+    text-align: right;
+    color: blue;
+}
+
+/* this sets the following image in 'mainstream_project.php' to the following style */
+.imageMP{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* this sets the following image in 'mainstream_project.php' to the following style and width on mobile device */
+@media screen and (max-width: 480px) {
+    .imageMP{
+        width:300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* the following sets the table width and font so it will work on mobile sized screen */
+@media screen and (max-width: 480px) {
+    .table td, .table th {
+        max-width: 100px;
+    }
+
+    td{
+        font-size: 14px;
+    }
+}
+
+/*This give the titles in the contact page the folllowing font style*/
+.titleC{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 34px;
+}
+
+/* this sets the title about contact info in 'contacts.php' to the following style */
+.titleCsmall{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px; 
+    margin-top:10px;
+}
+
+/* this sets the footer in 'footer.php' to the following style */
+footer{
+    background-color: #212529;
+    color:white;   
+    text-align: center;
+    height: 70px;
+}
+
+/* this sets the container to the following in 'header.php' */
+.container{
+    margin-top: 50px;
+}
+
+/* this sets all buttons with this class to be assigned to the right side of the page */
+.btn-btn-primary{
+  text-align: right;
+}
+
+/*this is used to make sure that the dropdown menu is at the very left side of the screen*/
+.dropdown-menu{
+    left: auto ;
+}
+
+/*the following makes the header the following font style in the keep project page*/
+.titleKP{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+}
+
+/*the following makes the header the following font style in the 'mainstream_project.php*/
+.titleMP{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+}
+
+/*the following makes the header the following font style in the 'privacy_policy.php*/
+.titlePP{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+}
+
+/*the following makes the header the following font style in the About Us page*/
+.titleAU{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+}
+
+/* this sets the policies header for volunteering in 'volunteers.php' to the following */
+.policiesHeader{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* this sets the image in 'young_leader.php' to the following style */
+.imageYLC{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* this sets the image carousel to be in the centre of the page */
+.carousel.slide{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+/* this sets the following margins in the container in 'volunteer.php' */
+#volunteerHeaderContainer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* this style is used for the title in 'about.php', 'keep_project.php', 'mainstream_project.php' and 'privacy_policy.php' */
+.aboutHeader{
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+
+}
+
+/* This will used to have the header sticky and fixed when scrolling */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+/* this means when we have the class sticky and content there will be a padding of 60px */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  /* this will set the right carousel icon to the following */
+  .carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+
+    /* this will set the left carousel icon to the following */
+  .carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+
+
+/* this is used for the image carousel width */
+#demo{
+    width:300px;   
+}
+
+/* this is used for the image carousel width on mobile sized devices */
+@media screen and (max-width: 480px) {
+    #demo{
+        width: 300px; 
+        height: 300px;
+    }
+  }
+
+/* this sets each individual image in the carousel to be 400px in width and height */
+  .carouselImage{
+    width: 300px; 
+    height: 300px; 
+  }
+
+  /* this sets each individual image in the carousel to be 400px in width and height on mobile sized device*/
+  @media screen and (max-width: 480px) {
+    .carouselImage{
+        width: 300px; 
+        height: 300px;
+    }
+  }
+
+
+/* this is used to create the overlay effect we see on 'index.php' when you travel to the website for the first time*/
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url("/YouthProjectApplication_PHP/images/quality4.PNG");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px 450px;
+}
+
+/* this is used to create the overlay effect we see on 'index.php' when you travel to the website for the first time on mobile sized screens*/
+@media screen and (max-width: 550px) {
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-image: url("/YouthProjectApplication_PHP/images/quality4.PNG");
+        background-color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 300px 300px;
+    }
+}
+
+/* this sets all the content in the overlay to the following in 'index.php' */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* this makes all links in the overlay in 'index.php' to the following */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* when an overlay link is hover over in 'index.php', you will get the following effect */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* this puts the close button we see in the overlay to the top right in 'index.php' */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* this makes the text that says 'click here' appears as the following in 'index.php' */
+.overlay .overlayButton{
+    position: absolute;
+    bottom: 15px;
+    left: 43%;
+    font-size: 36px;
+    color:black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* this makes the text that says 'click here' appears as the following in 'index.php' on mobile sized device */
+@media screen and (max-width: 550px) {
+    .overlay .overlayButton{
+        position: absolute;
+        bottom: 15px;
+        left: 25%;
+        font-size: 36px;
+        color:black;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+/* this makes the overlay close button smaller when on mobile sized devices in 'index.php' */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* this set all ids with tableKP to be in the centre in 'keep_project.php' and 'mainstream_project.php' */
+#tableKP{
+text-align: center;
+}
+
+/* this sets all the images to be centred in 'keep_project.php' */
+.imageKP{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*this changes the look of how the dropdown menu appear in the header navbar*/
+.dropdown-menu {
+    background-color: #343a40;
+}
+
+/* this will make the dropdown a different color when hover over */
+.dropdown-item:hover{
+    background-color: #343a40;
+    color: white;
+}
+
+/* this make each individual dropdown this specific color */
+.dropdown-item {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff80
+}
+
+
