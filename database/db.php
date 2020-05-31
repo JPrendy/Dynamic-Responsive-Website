@@ -1,8 +1,4 @@
 <?php
-// $servername = "localhost";
-// $username = "kilmorewestyouth";
-// $password = "KilmoreWest2018!!";
-// $dbname = "kilmorew_websiteDatabase";
 
 $servername = "localhost";
 $username = "root";
